@@ -1,21 +1,59 @@
-MIT License
+## License
 
-Copyright (c) 2026 Antonio Bueno
+Copyright © 2026 Antonio Bueno. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+PORTFOLIO SOURCE CODE LICENSE
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+This repository and its source code are made publicly available for
+portfolio, demonstration, review, and educational purposes.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+PERMITTED USE
+
+You are permitted to:
+
+- View and inspect the source code.
+- Study the source code for educational purposes.
+- Review the architecture, implementation, and development practices
+  demonstrated in this repository.
+- Reference the project as a portfolio example.
+
+RESTRICTIONS
+
+Without prior written permission from the copyright holder, you may not:
+
+- Copy or reproduce the source code or substantial portions of it.
+- Modify or create derivative works based on the source code.
+- Redistribute, publish, or sublicense the source code.
+- Incorporate the source code or substantial portions of it into
+  another project.
+- Use the source code or substantial portions of it in commercial
+  products or services.
+- Sell, license, or otherwise commercially exploit the source code
+  or derivative works.
+- Represent the source code or derivative works as your own.
+
+The public availability of this repository does not grant any license
+or ownership rights to the source code, except for the limited rights
+expressly stated above.
+
+All rights, title, and interest in the source code remain with the
+copyright holder.
+
+TRADEMARKS AND BRANDING
+
+The names, logos, trademarks, service marks, domain names, visual
+identity, and branding associated with AntonioBS.Net are not licensed
+under this agreement and may not be used without prior written
+permission.
+
+NO WARRANTY
+
+The source code is provided "AS IS", without warranty of any kind,
+express or implied. The copyright holder shall not be liable for any
+claim, damages, or other liability arising from the use of the source
+code.
+
+For permission requests or commercial licensing inquiries, please
+contact:
+
+dev@antoniobs.net
