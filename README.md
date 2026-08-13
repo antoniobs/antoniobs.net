@@ -2,7 +2,7 @@
 Source code and infrastructure configuration for antoniobs.net, a personal web project with automated CI/CD using GitHub Actions.
 
 
-# Website
+# About
 
 Welcome to the official repository for my personal website **[antoniobs.net](https://antoniobs.net)**. Here you'll find the source code, design, and content.
 
