@@ -28,3 +28,159 @@ To run this project locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/tnlnx/antoniobs.net.git
+ 
+
+## Project Creation
+
+The following command was used to create the Astro project.
+
+> **Note:** This command is for initial project creation only. Do not use it for normal development.
+
+```bash
+npm create astro@latest .
+````
+
+## GNU/Linux Debian 13 Development Environment
+
+The project can be developed using a GNU/Linux Debian 13 environment, including Debian running under WSL2.
+
+### Verify the environment
+
+```bash
+cat /etc/os-release
+node --version
+npm --version
+```
+
+### Install required packages
+
+```bash
+sudo apt update
+sudo apt install -y curl git
+```
+
+### Install NVM
+
+NVM (Node Version Manager) is used to install and manage Node.js versions.
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+source ~/.bashrc
+```
+
+Verify NVM:
+
+```bash
+nvm --version
+```
+
+### Install Node.js LTS
+
+```bash
+nvm install --lts
+```
+
+Verify the installed versions:
+
+```bash
+node --version
+npm --version
+```
+
+### Install project dependencies
+
+From the project root:
+
+```bash
+npm install
+```
+
+### Start the development server
+
+```bash
+npm run dev
+```
+
+The Astro development server is normally available at:
+
+```text
+http://localhost:4321
+```
+
+## Windows Development Environment
+
+The project can also be developed directly from Windows using Node.js and npm.
+
+### PowerShell Execution Policy
+
+If required, configure the PowerShell execution policy for the current user:
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+> **Note:** This is only required if PowerShell prevents npm scripts from running. It is not an Astro-specific requirement.
+
+### Install project dependencies
+
+From the project root:
+
+```powershell
+npm install
+```
+
+### Start the development server
+
+```powershell
+npm run dev
+```
+
+The Astro development server is normally available at:
+
+```text
+http://localhost:4321
+```
+
+## Development
+
+The project uses Astro for the web application and npm for dependency management.
+
+### Install dependencies
+
+After cloning the repository:
+
+```bash
+npm install
+```
+
+### Start the development server
+
+```bash
+npm run dev
+```
+
+### Build the project
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+### Preview the production build
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+ 
+
+## CI/CD
+
+The project uses GitHub Actions for automated CI/CD.
+
+The CI/CD pipeline is responsible for validating changes and deploying approved changes to the production environment.
+
+> **Note:** Production deployment should be performed through the configured CI/CD pipeline rather than manually from a development environment.
+ 
