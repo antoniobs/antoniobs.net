@@ -198,11 +198,14 @@ Inside of this project, you'll see the following folders and files:
 │   ├── assets
 │   │   └── (empty)
 │   ├── components
-│   │   └── Welcome.astro
+│   │   └── Logo.astro
+│   │   └── Logo.css
 │   ├── layouts
 │   │   └── Layout.astro
+│   │   └── Layout.css
 │   └── pages
 │       └── index.astro
+│       └── index.css
 └── package.json
 ```
 
@@ -215,6 +218,7 @@ All commands are run from the root of the project, from a terminal:
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
 | `npm install`             | Installs dependencies                            |
+| `npm run antoniobs.net`   | Starts local dev server at `localhost:4321`      |
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
