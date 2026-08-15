@@ -1,4 +1,4 @@
-name: Deploy antoniobs.net
+name: Continuous Deployment - antoniobs.net
 
 on:
   release:
