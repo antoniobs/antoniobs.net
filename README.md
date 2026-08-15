@@ -176,15 +176,6 @@ npm run preview
 ```
  
 
-## CI/CD
-
-The project uses GitHub Actions for automated CI/CD.
-
-The CI/CD pipeline is responsible for validating changes and deploying approved changes to the production environment.
-
-> **Note:** Production deployment should be performed through the configured CI/CD pipeline rather than manually from a development environment.
- 
-
 ## 🚀 Project Structure
 
 Inside of this project, you'll see the following folders and files:
@@ -228,3 +219,78 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [this documentation](https://docs.astro.build) or jump into this [Discord server](https://astro.build/chat).
+
+
+## CI/CD
+
+The project uses GitHub Actions to automate the build, validation, and production deployment of antoniobs.net.
+
+The CI/CD pipeline is structured around the following flow:
+
+```text
+Pull Request
+    │
+    ▼
+Continuous Integration
+    │
+    ├── Checkout source
+    ├── Install dependencies
+    └── Build application
+    │
+    ▼
+Merge to main
+    │
+    ▼
+Release
+    │
+    ▼
+Build release artifact
+    │
+    ▼
+Production Environment
+    │
+    ▼
+Self-hosted Azure Runner
+    │
+    ▼
+Deploy to production
+```
+
+### Continuous Integration
+
+Every change submitted through a pull request is validated through GitHub Actions. The application is installed and built in a clean GitHub-hosted environment to ensure that the source code can be successfully compiled before it reaches production.
+
+### Continuous Deployment
+
+Production deployments are triggered by published GitHub Releases. The release is built independently and stored as a versioned GitHub Actions artifact.
+
+The production deployment then:
+
+1. Downloads the artifact associated with the release.
+2. Executes on a dedicated self-hosted runner hosted on Azure.
+3. Deploys the generated static files to the configured production path.
+4. Uses the `production` GitHub Environment for deployment-specific configuration and protection rules.
+
+This separates the **build environment** from the **production environment** and ensures that production receives the exact artifact generated for the released version.
+
+### Infrastructure
+
+The production deployment uses a dedicated Linux service account for the GitHub Actions runner. The runner does not have `sudo` privileges and only has the filesystem permissions required to update the website.
+
+Deployment paths and other non-sensitive configuration values are managed through GitHub Actions Environment Variables rather than being hard-coded in the workflow.
+
+### Release Strategy
+
+Releases are versioned using Git tags, for example:
+
+```text
+v1.0.6
+```
+
+The corresponding build artifact is versioned using the release tag:
+
+```text
+antoniobs.net-v1.0.6
+```
+
+This provides traceability between the source code, GitHub Release, build artifact, and production deployment. :-)
