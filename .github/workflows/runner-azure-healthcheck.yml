@@ -1,4 +1,4 @@
-name: Test self-hosted runner for antoniobs.net
+name: Azure runner health check - antoniobs.net
 
 on:
   workflow_dispatch:
