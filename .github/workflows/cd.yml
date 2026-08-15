@@ -66,6 +66,6 @@ jobs:
           find dist -type f
 
           rm -rf "${DEPLOY_PATH:?}"/*
-          cp -a dist/. "${DEPLOY_PATH}/"
+          cp -r dist/. "${DEPLOY_PATH}/"
 
           echo "Deployment completed successfully"
