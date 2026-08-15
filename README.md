@@ -1,4 +1,10 @@
 # 🌐 antoniobs.net
+
+[![Continuous Integration](https://github.com/tnlnx/antoniobs.net/actions/workflows/ci.yml/badge.svg)](https://github.com/tnlnx/antoniobs.net/actions/workflows/ci.yml)
+[![Continuous Deployment](https://github.com/tnlnx/antoniobs.net/actions/workflows/cd.yml/badge.svg)](https://github.com/tnlnx/antoniobs.net/actions/workflows/cd.yml)
+
+[![Azure Runner Health Check](https://github.com/tnlnx/antoniobs.net/actions/workflows/runner-azure-healthcheck.yml/badge.svg)](https://github.com/tnlnx/antoniobs.net/actions/workflows/runner-azure-healthcheck.yml)
+
 Source code and infrastructure configuration for antoniobs.net, a personal web project with automated CI/CD using GitHub Actions.
 
 
@@ -222,6 +228,10 @@ Feel free to check [this documentation](https://docs.astro.build) or jump into t
 
 
 ## CI/CD
+
+[![Continuous Integration](https://github.com/tnlnx/antoniobs.net/actions/workflows/ci.yml/badge.svg)](https://github.com/tnlnx/antoniobs.net/actions/workflows/ci.yml)
+[![Continuous Deployment](https://github.com/tnlnx/antoniobs.net/actions/workflows/cd.yml/badge.svg)](https://github.com/tnlnx/antoniobs.net/actions/workflows/cd.yml)
+
 
 The project uses GitHub Actions to automate the build, validation, and production deployment of antoniobs.net.
 
