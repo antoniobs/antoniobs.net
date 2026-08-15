@@ -1,0 +1,19 @@
+name: Test self-hosted runner for antoniobs.net
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-runner:
+    name: Test production runner
+    runs-on:
+      - self-hosted
+      - vm-production
+
+    steps:
+      - name: 🐄 Runner diagnostics
+        run: |
+          cowsay "A well-written program is its own heaven; a poorly written one is its own hell, running on $(grep PRETTY_NAME /etc/os-release)
+          with Kernel: $(uname -r)
+          with Architecture: $(uname -m)
+          at: $(date '+%Y-%m-%d %H:%M:%S %Z')"
