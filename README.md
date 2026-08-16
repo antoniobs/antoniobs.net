@@ -304,3 +304,41 @@ antoniobs.net-v1.0.6
 ```
 
 This provides traceability between the source code, GitHub Release, build artifact, and production deployment. :-)
+
+
+## ☁️ Cloud Infrastructure
+
+The production infrastructure uses Cloudflare as the authoritative DNS and edge layer, with the application hosted on Microsoft Azure.
+
+                         antoniobs.net
+                              │
+                              ▼
+                     ┌─────────────────┐
+                     │   Cloudflare    │
+                     │ Authoritative   │
+                     │      DNS        │
+                     │  SSL / Proxy    │
+                     └────────┬────────┘
+                              │
+                 ┌────────────┴────────────┐
+                 │                         │
+                 ▼                         ▼
+          ┌─────────────┐          ┌─────────────┐
+          │ Azure VM    │          │ Azure Blob   │
+          │             │          │   Storage    │
+          │ Nginx       │          │              │
+          │ Astro       │          │     CDN      │
+          │ ASP.NET API │          └─────────────┘
+          │ .NET 10     │
+          │ Redis       │
+          │ PostgreSQL  │
+          └─────────────┘
+
+                 Google Workspace
+                        │
+                        ▼
+                       Mail
+
+The architecture separates DNS, edge security, application infrastructure, content delivery, and email services. Cloudflare provides authoritative DNS, TLS termination, and reverse proxy capabilities, while Azure hosts the application workloads and Blob Storage provides distributed content delivery.
+
+Origin traffic is secured using Cloudflare Origin Certificates with Full (strict) TLS encryption between Cloudflare and the Azure origin.
