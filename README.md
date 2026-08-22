@@ -146,6 +146,72 @@ The Astro development server is normally available at:
 ```text
 http://localhost:4321
 ```
+## Windows WSL Debian Environment
+
+
+```bash
+which node
+which npm
+type -a node
+type -a npm
+ 
+node -p "process.platform"
+node -p "process.execPath"
+```
+  
+Instalar `nvm`:
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+```
+
+Luego:
+
+```bash
+source ~/.bashrc
+```
+
+Comprobar:
+
+```bash
+command -v nvm
+```
+
+Instalar Node 24:
+
+```bash
+nvm install 24
+nvm use 24
+nvm alias default 24
+```
+
+Comprobar:
+
+```bash
+node -v
+npm -v
+which node
+which npm
+```
+
+
+```bash
+node -p "process.platform"
+```
+
+debe devolver:
+
+```text
+linux
+```
+
+Luego:
+
+```bash
+npm install
+npm run antoniobs.net
+```
+
 
 ## Development
 

@@ -1,0 +1,64 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#FF6A1A",
+    "activityBar.activeBorder": "#FFB000",
+    "activityBar.background": "#111111",
+    "activityBar.foreground": "#FFFFFF",
+    "activityBar.inactiveForeground": "#777777",
+
+    "activityBarBadge.background": "#FF7A18",
+    "activityBarBadge.foreground": "#111111",
+
+    "statusBar.background": "#C2410C",
+    "statusBar.foreground": "#FFFFFF",
+    "statusBarItem.hoverBackground": "#FF6A1A",
+
+    "statusBarItem.remoteBackground": "#FF7A18",
+    "statusBarItem.remoteForeground": "#111111",
+
+    "titleBar.activeBackground": "#0A0A0A",
+    "titleBar.activeForeground": "#FFB000",
+    "titleBar.inactiveBackground": "#0A0A0A",
+    "titleBar.inactiveForeground": "#8A8A8A",
+
+    "sash.hoverBorder": "#FF7A18",
+
+    "commandCenter.border": "#FF6A1A",
+
+    "editorGroup.border": "#2A2A2A",
+    "editorGroupHeader.tabsBackground": "#0A0A0A",
+    "tab.activeBackground": "#111111",
+    "tab.activeForeground": "#FFFFFF",
+    "tab.inactiveBackground": "#0A0A0A",
+    "tab.inactiveForeground": "#777777",
+    "tab.activeBorderTop": "#FF7A18",
+
+    "panel.background": "#0D0D0D",
+    "panel.border": "#2A2A2A",
+
+    "terminal.background": "#0A0A0A",
+    "terminal.foreground": "#F5F5F5",
+
+    "sideBar.background": "#0D0D0D",
+    "sideBar.foreground": "#D4D4D4",
+    "sideBar.border": "#2A2A2A",
+
+    "input.background": "#181818",
+    "input.foreground": "#FFFFFF",
+    "input.border": "#3A3A3A",
+    "inputOption.activeBorder": "#FF7A18",
+
+    "focusBorder": "#FF7A18",
+    "selection.background": "#7C2D12",
+
+    "list.activeSelectionBackground": "#3A1A0A",
+    "list.activeSelectionForeground": "#FFFFFF",
+    "list.hoverBackground": "#1F130D",
+
+    "progressBar.background": "#FF7A18",
+
+    "gitDecoration.modifiedResourceForeground": "#FFB000",
+    "gitDecoration.addedResourceForeground": "#FF7A18",
+    "gitDecoration.deletedResourceForeground": "#C2410C"
+  }
+}
