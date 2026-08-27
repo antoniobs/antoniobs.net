@@ -1,7 +1,6 @@
 
 
 footer {
-  position: fixed;
   bottom: 1.5rem;
   left: 0;
   right: 0;
@@ -61,4 +60,10 @@ footer {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+.e-font-icon-svg,.e-fab-whatsapp {
+        fill: var(--antoniobs-orange-font-color);
+    
+    height: 1.2em;
 }
